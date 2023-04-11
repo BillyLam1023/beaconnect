@@ -8,6 +8,7 @@ const Login = lazy(() => import('../pages/Login/login.handle'));
 const LoginCheck = lazy(() => import('./LoginCheck'));
 const Main = lazy(() => import('../pages/Main/main'));
 const Logout = lazy(() => import('../pages/Logout/logout'));
+const Admin = lazy(() => import('../pages/Admin/admin'));
 
 const Router = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,6 +23,14 @@ const Router = () => {
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
+        <Route
+          path="/admin"
+          element={
+            // <LoginCheck isLoggedIn={isLoggedIn}>
+            <Admin />
+            // </LoginCheck>
+          }
+        />
         <Route
           path="/register"
           element={<Login loginType="Register" isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />}

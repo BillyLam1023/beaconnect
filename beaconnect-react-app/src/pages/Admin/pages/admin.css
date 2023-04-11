@@ -1,0 +1,52 @@
+.Navbar-container {
+  background: #ccd5ae;
+  box-shadow: 0 10px 50px 0 #e4e5ed;
+  padding: 10px 20px;
+}
+
+.Navbar-container p {
+  display: inline-block;
+  margin: 0;
+}
+
+.logoutIcon {
+  float: right;
+}
+
+.Panel-container {
+  font-family: Arial, sans-serif;
+  margin: 0px 20px;
+  height: 100vh;
+  display: grid;
+}
+
+.Panel-componant {
+  font-weight: bold;
+  padding: 12px;
+}
+
+.Panel-page {
+  display: grid;
+  grid-template-rows: repeat(15, 1fr);
+  height: calc(100% - 130px);
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 50px 0 #e4e5ed;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-container {
+  background: #f3f4f5;
+  height: 100vh;
+}
